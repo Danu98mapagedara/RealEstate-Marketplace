@@ -1,0 +1,165 @@
+
+.property-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+    
+  }
+  
+
+  .content-head {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 80px;
+    justify-content: center;
+    padding: 15px;
+    
+  }
+  
+  .back-btn {
+    padding: 8px 12px;
+    background-color: #1f945f;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.3s ease-in-out;
+  }
+  
+  .back-btn:hover {
+    background-color: #d4d4d4;
+  }
+  
+  .land-title {
+    font-weight: bold;
+    color: #35a940;
+  }
+  
+  /* Image Section */
+  .property-image {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .property-image img {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Property Details - Call, Location, Price */
+  .property-flex {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+    background: #6f6ca1;
+    border-radius: 10px;
+    margin-bottom: 250px;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .call, .location, .price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .call img, .location img {
+    width: 40px;
+  }
+  
+ 
+  .propey-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .property-facility {
+    background: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 30%;
+  }
+  
+  .property-facility img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+  
+  /* Payment Details */
+  .payment-details {
+    width: 60%;
+    background: rgba(173, 216, 230, 0.3);
+    padding: 5px;
+    border: 1px solid #2796a5;
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    align-items: center;
+    text-align: left;
+    padding: 20px;
+    margin: 20px 0px ;
+  }
+  
+  .payment-details h3 {
+    margin-bottom: 15px;
+  }
+  
+  .payment-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .payment-list li {
+    padding: 5px 0;
+  }
+  
+  /* 📌 Mobile Responsiveness (max-width: 489px) */
+  @media (max-width: 489px) {
+    .content-head {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .back-btn {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    .land-title {
+      font-size: 20px;
+    }
+  
+    .property-image img {
+      width: 100%;
+    }
+  
+    .property-flex {
+      flex-direction: column;
+      gap: 10px;
+      text-align: center;
+    }
+  
+    .propey-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .property-facility {
+      width: 80%;
+    }
+  
+    .payment-details {
+      text-align: center;
+    }
+  }
+  

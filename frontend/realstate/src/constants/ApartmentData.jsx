@@ -1,0 +1,112 @@
+import images from "./images";
+
+const ApartmentData = [
+    {
+        id: 1,
+        type: "apartment",
+        image: images.apa1,
+        status:"new",
+        title: "Luxury Apartment",
+        location: "Colombo 07",
+        number: "077 765 4321",
+        price: "Rs 80,000,000 LKR",
+        description:
+            "This luxurious apartment offers modern living with breathtaking city views. Located in the heart of Colombo, it provides convenience and style...",
+        size: "1200 sqft",
+        bedrooms: 3,
+        bathrooms: 2,
+    },
+    {
+        id: 2,
+        type: "apartment",
+        image: images.apa2,
+        status:"ongoing",
+        number: "077 765 4321",
+        title: "Apartment for Sale",
+        location: "Kandy City",
+        price: "Rs 50,000,000 LKR",
+        description:
+            "Enjoy the scenic beauty of Kandy while living in a modern apartment with easy access to schools, hospitals, and shopping centers...",
+        size: "900 sqft",
+        bedrooms: 2,
+        bathrooms: 1,
+    },
+    {
+        id: 3,
+        type: "apartment",
+        image: images.apa3,
+        status:"ongoing",
+        number: "077 876 5432",
+        title: "Modern Apartment",
+        location: "Nugegoda",
+        price: "Rs 45,000,000 LKR",
+        description:
+            "Located in the bustling Nugegoda area, this stylish apartment offers a spacious living area, modern fittings, and easy access to transport.",
+        size: "1100 sqft",
+        bedrooms: 3,
+        bathrooms: 2,
+    },
+    {
+        id: 4,
+        type: "apartment",
+        image: images.apa4,
+        status:"new",
+        number: "077 987 6543",
+        title: "Seaside Apartment",
+        location: "Galle",
+        price: "Rs 60,000,000 LKR",
+        description:
+            "Wake up to the sound of waves in this stunning seaside apartment. Featuring breathtaking ocean views and luxurious amenities.",
+        size: "1400 sqft",
+        bedrooms: 4,
+        bathrooms: 3,
+    },
+    {
+        id: 5,
+        type: "apartment",
+        image: images.apa1,
+        status:"new",
+        number: "077 234 5678",
+        title: "Penthouse",
+        location: "Dehiwala",
+        price: "Rs 100,000,000 LKR",
+        description:
+            "A luxury penthouse with a rooftop pool, offering unparalleled views of the city and ocean. Ideal for those seeking an elite lifestyle.",
+        size: "2000 sqft",
+        bedrooms: 5,
+        bathrooms: 4,
+    },
+    {
+        id: 6,
+        type: "apartment",
+        image: images.apa3,
+        status:"new",
+        number: "077 456 7890",
+        title: "Affordable Apartment",
+        location: "Kiribathgoda",
+        price: "Rs 35,000,000 LKR",
+        description:
+            "A budget-friendly apartment with modern amenities and easy access to supermarkets, schools, and hospitals. Perfect for families.",
+        size: "850 sqft",
+        bedrooms: 2,
+        bathrooms: 1,
+    },
+    {
+        id: 7,
+        type: "apartment",
+        image: images.apa4,
+       status:"complete",
+        number: "077 654 3210",
+        title: "City View Apartment",
+        location: "Malabe",
+        price: "Rs 55,000,000 LKR",
+        description:
+            "A modern apartment with a panoramic city view, located near IT parks and universities. Ideal for professionals and students.",
+        size: "950 sqft",
+        bedrooms: 2,
+        bathrooms: 2,
+    },
+    
+];
+
+export default ApartmentData;

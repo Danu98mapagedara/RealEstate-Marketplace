@@ -1,0 +1,135 @@
+/* Container Styling */
+.h-container {
+    width: 90%;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+
+   
+}
+
+
+.h-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 100px;
+}
+
+
+.h-left {
+    flex: 1;
+}
+.h-head {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Right Side Filter Box */
+.h-right {
+    flex: 2;
+    background: #f9f9f9;
+    padding: 50px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Grid Layout for Inputs */
+.h-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #0b0b0b;
+    margin-bottom: 5px;
+}
+
+.input-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: #fff;
+    cursor: pointer;
+}
+
+.input-group select:focus {
+    border-color: #007bff;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+
+.serch-btn {
+    background: #b7708b;
+    color: white;
+    padding: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    width: 30%;
+    margin: 20px auto;
+}
+
+.serch-btn:hover {
+    background: #c14d5b;
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 506px) {
+    .h-container {
+        width: 100%;
+        padding: 0px;
+        margin: 10px auto;
+    
+       
+    }
+    .input-group label {
+        font-size: 16px;
+        font-weight: 600;
+        color: #0b0b0b;
+        margin-bottom: 8px;
+    }
+    
+    .h-flex {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0px;
+    }
+    .h-right {
+        width: 80%;
+        background: #f9f9f9;
+        padding: 50px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .h-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .serch-btn {
+        width: 100%;
+    }
+}
+
+

@@ -1,0 +1,127 @@
+/* General Container Styling */
+.abt-container {
+    padding: 50px 80px;
+    border: 2px solid #ddd;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+.vision, .policy, .awards, .history {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    margin-bottom: 50px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    background: #f9f9f9;
+}
+
+/* Image Styling */
+.abt-image, .his-image, .award-img {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.abt-image img, .his-image img, .award-img img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.vision-txt, .his-text, .awd-list, .policy1, .policy2 {
+    width: 50%;
+    text-align: left;
+    padding: 20px;
+}
+
+
+.awards {
+    background-color: #004c99;
+    color: white;
+    border-radius: 10px;
+    padding: 30px;
+}
+
+.awd-list ul {
+    list-style: none;
+    padding: 0;
+}
+
+.awd-list li {
+    font-size: 40px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+/* Policy Section */
+.policy {
+    justify-content: center;
+    gap: 20px;
+}
+
+.policy1, .policy2 {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+    .abt-container {
+        padding: 30px;
+    }
+    .vision, .history, .awards, .policy {
+        flex-direction: column;
+        text-align: center;
+    }
+    .abt-image, .his-image, .award-img {
+        width: 100%;
+    }
+    .vision-txt, .his-text, .awd-list, .policy1, .policy2 {
+        width: 100%;
+    }
+    h3 {
+        font-size: 22px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .abt-container {
+        padding: 20px;
+    }
+    .vision, .history, .awards, .policy {
+        padding: 15px;
+        gap: 30px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    p {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .abt-container {
+        padding: 15px;
+    }
+    .vision, .history, .awards, .policy {
+        gap: 20px;
+        padding: 10px;
+    }
+    h3 {
+        font-size: 18px;
+    }
+    p {
+        font-size: 14px;
+    }
+}

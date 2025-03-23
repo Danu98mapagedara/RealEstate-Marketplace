@@ -1,0 +1,128 @@
+.apa-con{
+    padding: 20px 150px;
+    margin: 0px auto;
+}
+
+
+.apartment-card {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+     background-color: rgb(193, 193, 213);
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+
+
+.card-flex{
+    display: flex;
+    gap: 50px;
+    width: 100%;
+    margin: 0px auto;
+    border-radius: 8px;
+}
+
+.apa-image{
+    width: 60%;
+}
+.apa-image img{
+   width: 100%;
+   border: 1px  solid white;
+   border-radius: 8px;
+}
+.apa-details{
+   width: 40%;
+   background-color: rgb(101, 92, 151);
+   padding: 50px;
+   border-radius: 8px;
+  
+   
+}
+.price{
+    font-weight: 800;
+    font-size: 26px;
+    color: white;
+}
+.apa-title{
+    font-weight: 800;
+    font-size: 30px;
+    color: white;
+}
+
+
+.filter-buttons button {
+    padding: 20px;
+   margin-top: 20px;
+    border: 1px solid gold;
+    background: white;
+    color: navy;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+}
+
+.filter-buttons .active {
+    background: navy;
+    color: white;
+}
+
+
+@media (max-width: 506px) {
+    .apa-con {
+        padding: 0px;
+      
+    }
+
+    .apartment-card {
+        width: 80%;
+        padding: 10px;
+        margin: 20px auto;
+       
+    }
+
+    .card-flex {
+        flex-direction: column;
+       gap: 0px;
+        align-items: center;
+    }
+
+    .apa-image {
+        width: 100%;
+    }
+
+    .apa-image img {
+        width: 100%;
+       
+    }
+
+    .apa-details {
+        width: 100%;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .apa-title {
+        font-size: 24px;
+    }
+
+    .filter-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+       
+    }
+
+    .filter-buttons button {
+        padding: 20pxpx;
+        margin-top: 0px;
+        border-radius: 15px;
+    }
+}
+
+
+

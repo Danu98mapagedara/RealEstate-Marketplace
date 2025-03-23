@@ -12,9 +12,13 @@ Backend: Node.js, Express.js, MongoDB
 ✨ Features
 
  Property Listings & Details
+ 
 🎞 Interactive Image Slider
+
  Responsive UI for Mobile & Desktop
+ 
 🏠 Sell Your Land Feature
+
  Smooth Animations with Framer Motion
 
  Installation & Setup

@@ -1,0 +1,14 @@
+const mongoose=require("mongoose");
+
+const landSchema = mongoose.Schema({
+    title: String,
+    location: String,
+    price: Number,
+    size: String,
+    description: String,
+    image: String,
+    contactName:String,
+    contactPhonenumber:String,
+  });
+
+  module.export=mongoose.model("Land",landSchema);

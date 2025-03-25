@@ -2,7 +2,9 @@ const mongoose=require("mongoose");
 
 
 const houseSchema=mongoose.Schema({
-
+    city:String,
+    district:String,
+    type:String,
     title: String,
     location: String,
     price: Number,

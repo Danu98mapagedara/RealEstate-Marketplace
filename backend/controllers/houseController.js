@@ -17,7 +17,7 @@ exports.createHouse=async(req,res)=>{
     try{
         const newHouse=new House(req.body);
         await newHouse.save();
-        res.status(201).jason(newHouse);
+        res.status(201).json(newHouse);
     }
     catch(error){
         console.error("❌ Error creating house:", error.message);

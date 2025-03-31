@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { motion } from 'framer-motion';
+import axios from 'axios';
 import './Land.css';
 
 const Landsell = () => {
@@ -12,9 +13,22 @@ const Landsell = () => {
   } = useForm();
 
   const onSubmit = (data) => {
-    console.log(data);
+ console.log("data is",data);
+
+ 
+ axios.post('http://localhost:8000/api/lands', data)
+      .then((response) => {
+        console.log('Form submitted successfully:', response.data);
+        alert('Form submitted successfully');
+      })
+      .catch((error) => {
+        console.error('Error submitting form:', error);
+        alert('Error submitting form');
+      });
+
     reset();
   };
+ 
 
   return (
     <div className="sellproperty-container">
@@ -37,12 +51,12 @@ const Landsell = () => {
               <label>Full Name:</label>
               <input
                 type="text"
-                {...register('fullname', { required: 'Full Name is required' })}
+                {...register('contactName', { required: 'Full Name is required' })}
                 placeholder="Full Name"
               />
-              {errors.fullname && <span className="error">{errors.fullname.message}</span>}
+              {errors.contactName && <span className="error">{errors.contactName.message}</span>}
             </div>
-            <div className="form-column">
+            {/* <div className="form-column">
               <label>Email:</label>
               <input
                 type="email"
@@ -50,7 +64,7 @@ const Landsell = () => {
                 placeholder="Email Address"
               />
               {errors.email && <span className="error">{errors.email.message}</span>}
-            </div>
+            </div> */}
           </motion.div>
 
           <motion.div
@@ -64,24 +78,42 @@ const Landsell = () => {
               <label>Phone Number:</label>
               <input
                 type="number"
-                {...register('pnumbr', { required: 'Phone Number is required' })}
+                {...register('contactPhoneNumber', { required: 'Phone Number is required' })}
                 placeholder="Phone Number"
               />
-              {errors.pnumbr && <span className="error">{errors.pnumbr.message}</span>}
+              {errors.contactPhoneNumber && <span className="error">{errors.contactPhoneNumber.message}</span>}
             </div>
-            <div className="form-column">
-              <label>Address:</label>
-              <input
-                type="text"
-                {...register('address', { required: 'Address is required' })}
-                placeholder="Address"
-              />
-              {errors.address && <span className="error">{errors.address.message}</span>}
-            </div>
+         
           </motion.div>
 
 <div className='land-info'> <p>Land Information</p></div>
          
+<motion.div
+            className="form-row"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 1 }}
+            
+          >
+            <div className="form-column">
+              <label>Land  Type:</label>
+              <input
+                type="text"
+                {...register('type', { required: 'District is required' })}
+                placeholder="type"
+              />
+              {errors.type && <span className="error">{errors.type.message}</span>}
+            </div>
+            <div className="form-column">
+              <label>Title:</label>
+              <input
+                type="text"
+                {...register('title', { required: 'title is required' })}
+                placeholder="City"
+              />
+              {errors.title && <span className="error">{errors.title.message}</span>}
+            </div>
+          </motion.div>
 
           <motion.div
             className="form-row"
@@ -118,22 +150,22 @@ const Landsell = () => {
             
           >
             <div className="form-column">
-              <label>Price (per perch) in LKR:</label>
+              <label>Price (per size) in LKR:</label>
               <input
                 type="number"
                 {...register('price', { required: 'Price is required' })}
-                placeholder="Price per perch"
+                placeholder="Price per size"
               />
               {errors.price && <span className="error">{errors.price.message}</span>}
             </div>
             <div className="form-column">
-              <label>Extent (in perches):</label>
+              <label>Extent (in sizees):</label>
               <input
                 type="number"
-                {...register('perch', { required: 'Extent is required' })}
-                placeholder="Extent in perches"
+                {...register('size', { required: 'Extent is required' })}
+                placeholder="Extent in sizees"
               />
-              {errors.perch && <span className="error">{errors.perch.message}</span>}
+              {errors.size && <span className="error">{errors.size.message}</span>}
             </div>
           </motion.div>
 
@@ -146,7 +178,7 @@ const Landsell = () => {
           >
             <div className="form-column">
               <label>Attach the survey plans and land images:</label>
-              <input type="file" {...register('images', { required: 'File is required' })} />
+              <input type="file" {...register('images',)} />
               {errors.images && <span className="error">{errors.images.message}</span>}
             </div>
           </motion.div>

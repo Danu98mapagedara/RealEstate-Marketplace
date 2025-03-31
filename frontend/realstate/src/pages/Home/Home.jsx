@@ -13,7 +13,6 @@ const Home = () => {
         <div className="home-banner">
 <Homeslider/>
         </div>
-
         <div className="home-content">
             <motion.div className="homecontent-left"
             initial={{opacity:0,x:-200}}

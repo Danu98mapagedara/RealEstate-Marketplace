@@ -1,6 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import { easeInOut, motion } from 'framer-motion';
+import axios from 'axios';
 import './Contact.css';
 
 const rowVariants = {
@@ -21,10 +22,20 @@ const ContactUs = () => {
     } = useForm();
 
     const onSubmit = (data) => {
-        console.log(data);
-        reset();
-    };
-
+       try{
+        axios.post('http://localhost:8000/api/contact', data)
+            .then((response) => {
+                console.log('Form submitted successfully:', response.data);
+                alert("Form submitted successfully")
+            })
+        }
+        catch(error){
+            console.error('Error submitting form:', error);
+            alert("Error submitting form")
+        }
+       
+        reset(); // Reset the form fields after submission
+        };
     return (
         <div className='con-container'>
             <motion.div className="con-left" 
@@ -39,7 +50,7 @@ const ContactUs = () => {
                 <form onSubmit={handleSubmit(onSubmit)}>
                     {[
                         { name: "name", type: "text", placeholder: "Full Name", error: errors.name },
-                        { name: "email", type: "email", placeholder: "Email Address", error: errors.email },
+                        { name: "emai", type: "email", placeholder: "Email Address", error: errors.email },
                         { name: "number", type: "number", placeholder: "Phone Number", error: errors.number },
                         { name: "message", type: "textarea", placeholder: "Your Message", error: errors.message }
                     ].map((field, index) => (

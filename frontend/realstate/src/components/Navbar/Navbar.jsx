@@ -19,7 +19,7 @@ const Navbar = () => {
                 <NavLink to='/yourland' className='nav-link'>Lands</NavLink>
                 <NavLink to='/contactus' className='nav-link'>Contact Us</NavLink>
                 <NavLink to='/aboutus' className='nav-link'>About Us</NavLink>
-                <NavLink to='/sellyourland' className='nav-link'>Sell Your Land</NavLink>
+                <NavLink to='/sellyourland' className='nav-link'>Sell Your Property</NavLink>
             </div>
 
             {/* Hamburger Menu for Mobile */}

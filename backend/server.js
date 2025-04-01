@@ -7,6 +7,7 @@ const apartmentRoutes = require("./routes/apartmentRoutes");
 const landRoutes = require("./routes/landRoutes");
 const houseRoutes = require("./routes/HouseRoutes");
 const contactRoutes = require("./routes/contactRoutes");
+const authRoutes = require("./routes/authRoutes");
 
 
 const app = express();
@@ -27,6 +28,7 @@ app.use("/api/apartments", apartmentRoutes);
 app.use("/api/lands", landRoutes);
 app.use("/api/houses", houseRoutes);
 app.use("/api/contact",contactRoutes );
+app.use("/api/auth", authRoutes);
 
 
 

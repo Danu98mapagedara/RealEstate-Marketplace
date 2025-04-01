@@ -6,13 +6,13 @@ const apartmentSchema=new  mongoose.Schema({
     type: String,
     price: Number,
     size: String,
-    description: String,
     city: String,
     district: String,
     image: String,
     contactName: String,
     contactPhoneNumber: String,
-    bedrooms: Number,
+    room: Number,
+    parking: Boolean, 
 })
 
 module.exports=mongoose.model('Apartment',apartmentSchema);

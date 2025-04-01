@@ -5,17 +5,13 @@ const houseSchema=new  mongoose.Schema({
     type: String,
     price: Number,
     size: String,
-    description: String,
     city: String,
     district: String,
     image: String,
     contactName: String,
     contactPhoneNumber: String,
-    bedrooms: Number,
-    bathrooms: Number,
-    garden: Boolean,
-    airConditioning: Boolean,
-    balcony: Boolean, 
+    room: Number,
+    parking: Boolean, 
 
 })
 module.exports=mongoose.model('House',houseSchema);

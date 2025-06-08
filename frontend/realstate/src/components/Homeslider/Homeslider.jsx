@@ -21,7 +21,7 @@ const Homeslider = () => {
                  navigation
                  pagination={{ clickable: true }}
                  autoplay={{ delay: 3000, disableOnInteraction: false }}
-         className="custom-swiper"
+                   className="custom-swiper"
   >
 
 {sliderData.map((land, index) => (

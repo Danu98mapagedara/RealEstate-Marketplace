@@ -34,7 +34,7 @@ const ContactUs = () => {
             alert("Error submitting form")
         }
        
-        reset(); // Reset the form fields after submission
+        reset();
         };
     return (
         <div className='con-container'>

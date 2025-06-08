@@ -22,7 +22,7 @@ const Navbar = () => {
                 <NavLink to='/sellyourland' className='nav-link'>Sell Your Property</NavLink>
             </div>
 
-            {/* Hamburger Menu for Mobile */}
+           
             <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
                 {menuOpen ? '✖' : '☰'}
             </div>
